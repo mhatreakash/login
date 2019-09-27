@@ -57,14 +57,14 @@ class _LoginPageState extends State<LoginPage> {
             'Login',
             style: TextStyle(fontSize: 20.0),
           ),
-          onPressed: validateAndSubmit(),
+          onPressed: validateAndSubmit,
         ),
         FlatButton(
           child: Text(
             'Create an Account',
             style: TextStyle(fontSize: 20.0),
           ),
-          onPressed: moveToRegister(),
+          onPressed: moveToRegister,
         )
       ];
     } else {
@@ -74,14 +74,14 @@ class _LoginPageState extends State<LoginPage> {
             'Create an Account',
             style: TextStyle(fontSize: 20.0),
           ),
-          onPressed: validateAndSubmit(),
+          onPressed: validateAndSubmit,
         ),
         FlatButton(
           child: Text(
             'Already have an Account? Login',
             style: TextStyle(fontSize: 20.0),
           ),
-          onPressed: moveToLogin(),
+          onPressed: moveToLogin,
         )
       ];
     }
